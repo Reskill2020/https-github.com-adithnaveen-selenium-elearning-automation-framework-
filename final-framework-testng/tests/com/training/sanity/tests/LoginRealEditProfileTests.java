@@ -13,19 +13,17 @@ import org.testng.annotations.Test;
 import com.training.generics.ScreenShot;
 import com.training.pom.HomePOM;
 import com.training.pom.HomeRetailEditProfilePOM;
-import com.training.pom.HomeRetailPOM2;
 import com.training.pom.LoginPOM;
 import com.training.pom.LoginRetailEditProfilePOM;
-import com.training.pom.LoginRetailPOM2;
 import com.training.utility.DriverFactory;
 import com.training.utility.DriverNames;
 
-public class LoginTestsReal {
+public class LoginRealEditProfileTests {
 
 	private WebDriver driver;
 	private String baseUrl;
-	private LoginRetailPOM2 loginPOM;
-	private HomeRetailPOM2 homePOM;
+	private LoginRetailEditProfilePOM loginPOM;
+	private HomeRetailEditProfilePOM homePOM;
 	private static Properties properties;
 	private ScreenShot screenShot;
 
@@ -39,8 +37,8 @@ public class LoginTestsReal {
 	@BeforeMethod
 	public void setUp() throws Exception {
 		driver = DriverFactory.getDriver(DriverNames.CHROME);
-		loginPOM = new LoginRetailPOM2(driver); 
-		homePOM = new HomeRetailPOM2(driver);
+		loginPOM = new LoginRetailEditProfilePOM(driver); 
+		homePOM = new HomeRetailEditProfilePOM(driver);
 		baseUrl = properties.getProperty("baseURL");
 		screenShot = new ScreenShot(driver); 
 		// open the browser 
@@ -53,11 +51,23 @@ public class LoginTestsReal {
 		driver.quit();
 	}
 	@Test
-	public void validLoginTest() {
+	public void validLoginTest() 
+	{
 		homePOM.ClickUserIcon();
 		loginPOM.sendUserName("dubeyshweta.mca@gmail.com");
 		loginPOM.sendPassword("March@202000000");
 		loginPOM.clickLoginBtn(); 
-		screenShot.captureScreenShot("First");
+		loginPOM.clickEditprofileBtn();
+		//Thread.sleep(1000);
+		
+		loginPOM.sendFirstname("manzoor");
+		loginPOM.sendLastname("mehadi");
+		loginPOM.sendEmail("manzoor@gmail.com");
+		loginPOM.sendPhone("9876543210");
+		loginPOM.clicknext();
+		
+		
+		
+		screenShot.captureScreenShot("EditProfile");
 	}
 }
