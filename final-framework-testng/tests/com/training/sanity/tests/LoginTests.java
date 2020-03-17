@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import com.training.dataproviders.LoginDataProviders;
 import com.training.generics.ScreenShot;
 import com.training.pom.HomePOM;
 import com.training.pom.LoginPOM;
@@ -48,11 +49,11 @@ public class LoginTests {
 		Thread.sleep(1000);
 		driver.quit();
 	}
-	@Test
-	public void validLoginTest() {
+	@Test(dataProvider="excel-inputs" , dataProviderClass=LoginDataProviders.class)
+	public void validLoginTest(String username,String pwd) {
 		homePOM.ClickUserIcon();
-		loginPOM.sendUserName("shweta@gmail.com");
-		loginPOM.sendPassword("admin@123");
+		loginPOM.sendUserName(username);
+		loginPOM.sendPassword(pwd);
 		loginPOM.clickLoginBtn(); 
 		screenShot.captureScreenShot("First");
 	}
