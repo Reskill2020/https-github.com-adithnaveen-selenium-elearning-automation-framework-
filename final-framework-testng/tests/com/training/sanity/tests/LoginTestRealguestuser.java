@@ -57,7 +57,7 @@ public class LoginTestRealguestuser {
 	@AfterMethod
 	public void tearDown() throws Exception {
 		Thread.sleep(1000);
-		//driver.quit();
+		driver.quit();
 	}
 	@Test
 	public void validLoginTest() throws InterruptedException {
