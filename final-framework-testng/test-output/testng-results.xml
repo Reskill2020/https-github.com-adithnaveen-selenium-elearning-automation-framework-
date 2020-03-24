@@ -1,29 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
+    <line>
+      <![CDATA[Expectation not match , unable to find created product and catagory under Shop tab]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="45357" started-at="2020-03-19T18:13:42Z" finished-at="2020-03-19T18:14:28Z">
+  <suite name="Default suite" duration-ms="67849" started-at="2020-03-24T18:12:38Z" finished-at="2020-03-24T18:13:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="45357" started-at="2020-03-19T18:13:42Z" finished-at="2020-03-19T18:14:28Z">
-      <class name="com.training.sanity.tests.LoginTestsRealReturnProd">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginTestsRealReturnProd@5c7fa833]" name="setUpBeforeClass" is-config="true" duration-ms="15" started-at="2020-03-19T23:43:42Z" finished-at="2020-03-19T23:43:42Z">
+    <test name="Default test" duration-ms="67849" started-at="2020-03-24T18:12:38Z" finished-at="2020-03-24T18:13:46Z">
+      <class name="com.training.sanity.tests.LoginAdminLogoutTests">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LoginAdminLogoutTests@5c7fa833]" name="setUpBeforeClass" is-config="true" duration-ms="50" started-at="2020-03-24T23:42:38Z" finished-at="2020-03-24T23:42:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginTestsRealReturnProd@5c7fa833]" name="setUp" is-config="true" duration-ms="20632" started-at="2020-03-19T23:43:42Z" finished-at="2020-03-19T23:44:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LoginAdminLogoutTests@5c7fa833]" name="setUp" is-config="true" duration-ms="22442" started-at="2020-03-24T23:42:38Z" finished-at="2020-03-24T23:43:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.LoginTestsRealReturnProd@5c7fa833]" name="validLoginTest" duration-ms="23686" started-at="2020-03-19T23:44:03Z" finished-at="2020-03-19T23:44:27Z">
+        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.LoginAdminLogoutTests@5c7fa833]" name="validLoginTest" duration-ms="44181" started-at="2020-03-24T23:43:01Z" finished-at="2020-03-24T23:43:45Z">
           <reporter-output>
+            <line>
+              <![CDATA[Expectation not match , unable to find created product and catagory under Shop tab]]>
+            </line>
           </reporter-output>
         </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginTestsRealReturnProd@5c7fa833]" name="tearDown" is-config="true" duration-ms="1001" started-at="2020-03-19T23:44:27Z" finished-at="2020-03-19T23:44:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LoginAdminLogoutTests@5c7fa833]" name="tearDown" is-config="true" duration-ms="1101" started-at="2020-03-24T23:43:45Z" finished-at="2020-03-24T23:43:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.LoginTestsRealReturnProd -->
+      </class> <!-- com.training.sanity.tests.LoginAdminLogoutTests -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

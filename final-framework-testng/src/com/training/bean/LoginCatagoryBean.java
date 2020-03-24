@@ -17,7 +17,7 @@ public class LoginCatagoryBean {
 		return catg;
 	}
 
-	public void setUserName(String catg1) {
+	public void setcatagoryName(String catg1) {
 		this.catg = catg1;
 	}
 
